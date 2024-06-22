@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iteem/css/stiel.css">
+    <title>Онлайн тренажер: Техника безопасности при работе за компьютером</title>
+</head>
+<body class="body">
+    <section class="container">
+        <div id="board" class="board">
+            <a class="how_to_use" id="how_to_use_open">?</a>
+            <div class="menu" id="menu">
+                <div class="title">Онлайн тренажер: Техника безопасности при работе за компьютером </div>
+                <a class="check_button button"  href="information.html">Изучить</a>
+                <a class="start_button button" id="start_button">Тест</a>
+            </div>
+            <div class="question_content" id="question_content">
+                <div id="question" class="question"></div>
+                <div class="variants">
+                    <a href="#" id="alt1" class="var"></a>
+                    <a href="#" id="alt2" class="var"></a>
+                    <a href="#" id="alt3" class="var"></a>
+                    <a href="#" id="alt4" class="var"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wrapper_modal" id="how_use_modal">
+        <div class="how_use_modal">
+            <a class="close_how_use" id="close_how_use">x</a>
+            <h2 class="modal_title">Как пользоваться?</h2>
+            <p> Кнопка "Изучить" переводит Вас на учебный материал для повторения темы. </p>
+            <p> Нажав на кнопку "Тест" Вы запускаете тренажер. В тренажере дается вопрос и 4 варианта ответа к нему. При нажатии на не верный вариант, Вы приходите к следующему вопросу. При нажатии на верный вариант, осуществляется приход на следующий вопрос.</p>
+            <p> В конечном итого выводится окно, в котором показывается количество верных ответов, и предложение вернуться в начальное меню.</p>
+        </div>
+    </div>
+    <div class="wrapper_modal" id="results_modal">
+        <div class="results_modal" id="results_modal">
+            <h2 class="title">Вы завершили тест!</h2>
+            <p id="result">Ваш результат: 17</p>
+            <a href="" class="close_result_modal">Перейти в меню</a>
+        </div>
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/how_to_use.js"></script>
+</body>
+</html>
